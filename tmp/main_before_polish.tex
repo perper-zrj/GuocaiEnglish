@@ -1,0 +1,426 @@
+\documentclass[12pt]{article}
+\usepackage{config}
+
+\title{\vspace{-1.2cm}\textbf{Engineering Trustworthy AI for Renewable-Powered Grids:\\
+A China-Informed, Globally Adaptable New-Engineering Framework}}
+\author{English Research Report}
+\date{September 2026}
+
+\begin{document}
+
+\begin{titlepage}
+  \maketitle
+  \thispagestyle{empty}
+  \vfill
+  \begin{center}
+    \begin{minipage}{0.86\textwidth}
+      \small\RaggedRight
+      \textbf{Scope.} This report examines a concrete global issue: how to integrate rapidly expanding variable renewable electricity while artificial-intelligence (AI) workloads add a new, concentrated source of demand. It reads China's new-engineering reform and infrastructure practice from a Chinese standpoint, while testing which mechanisms can travel across institutional and income contexts.
+
+      \vspace{0.5em}
+      \textbf{Evidence status.} Findings are based on a structured secondary-source review and comparative case analysis. Numerical targets in the solution section are explicitly ex-ante pilot targets, not claims about observed performance.
+    \end{minipage}
+  \end{center}
+  \vfill
+\end{titlepage}
+
+\pagenumbering{roman}
+\begin{abstract}
+The rapid build-out of wind and solar power is essential to climate mitigation, yet variable output, congested networks, cyber risk, and unequal technical capacity make integration difficult. At the same time, data centres that train and serve artificial-intelligence (AI) systems are becoming a material and geographically concentrated electricity load. This report asks how a \emph{New Engineering} approach can use AI to integrate renewable power without trading reliability, environmental integrity, security, or equity for speed. A structured desk review of international statistics, peer-reviewed energy and machine-learning research, Chinese policy documents, and two Chinese infrastructure cases was combined with a comparative coding framework covering forecasting, dispatch, compute footprint, workforce, and governance. The review finds four coupled gaps: probabilistic uncertainty is poorly connected to operational decisions; AI's own energy, water, and embodied-carbon costs are rarely counted; electrical engineering, machine learning, cybersecurity, and public-interest capabilities remain institutionally separated; and data and standards are fragmented across borders. China's 2017--2018 new-engineering policies, renewable scale, Zhangbei flexible direct-current demonstration, and 2022 East-to-West Computing project show the value of coordinating curriculum, physical infrastructure, and public standards. The report proposes a four-layer \textbf{NE--AI Grid} framework: physics-informed and probabilistic intelligence with deterministic safety fallbacks; practice-based interdisciplinary talent development; carbon- and water-aware computing; and accountable data governance with international interoperability. A staged 60-month pilot, measurable gates, and an equity-oriented financing and knowledge-sharing mechanism make the proposal operational. The contribution is a China-informed but non-exclusive model that treats trustworthy AI as a socio-technical engineering capability rather than a software add-on.
+\end{abstract}
+
+\noindent\textbf{Keywords:} new engineering; artificial intelligence; renewable-energy integration; smart grids; China; trustworthy AI; energy equity; engineering education
+
+\clearpage
+\begingroup
+\small
+\tableofcontents
+\endgroup
+\clearpage
+\pagenumbering{arabic}
+
+\section{Introduction}
+
+\subsection{Background: an energy transition with a new load profile}
+The global electricity system is being rebuilt around resources whose output changes with weather and daylight. Renewable capacity reached about 3,870~GW at the end of 2023, and annual additions approached 510~GW in 2023 \citep{irena2024,iea2024renewables}. Wind and solar reduce emissions, but variability increases the value of forecasting, flexible demand, storage, transmission, and capable institutions. The IPCC identifies this combination as central to a 1.5--2~$^{\circ}$C-consistent pathway \citep{ipcc2023}.
+
+Artificial intelligence changes this problem in two ways. First, machine-learning models can learn nonlinear relationships among weather, demand, network state, and equipment condition, potentially improving short-horizon forecasts and maintenance decisions. Second, AI is itself an electricity consumer. The International Energy Agency (IEA) estimates that data centres used roughly 460~TWh in 2022, close to 2\% of global electricity demand, and projects that their consumption could exceed 1,000~TWh by 2026 under current growth trajectories \citep{iea2024electricity}. If new data-centre loads are connected without locational and temporal coordination, an application intended to support decarbonisation can increase congestion, water stress, and fossil back-up generation.
+
+The resulting issue is concrete and global: \emph{how can countries integrate fast-growing variable renewable electricity and AI loads while maintaining reliability, low lifecycle emissions, cybersecurity, and fair access to capability?} It is simultaneously an education, infrastructure, and public-policy question: who can validate the system, where it is built, and who bears risk.
+
+\subsection{Why a China-informed perspective matters}
+China offers a consequential setting for studying this intersection. In 2023, it contributed over 50\% of global renewable-capacity additions, and the IEA forecasts that China will account for almost 60\% of new renewable capacity expected to become operational globally by 2028 \citep{iea2024renewables}; renewables exceeded half of its installed generation capacity \citep{nea2024}. This scale is a demanding test bed for coordinating power electronics, forecasting, dispatch, transmission, digital infrastructure, and workforce development.
+
+China's response has included an explicit educational and institutional concept. The Ministry of Education's 2017 discussion of the ``Fudan Consensus'' and ``Tianda Action,'' together with its subsequent new-engineering project programme, calls for interdisciplinary curricula, cooperation between universities and industry, and outcome-based learning \citep{moe2017,moemiit2018}. The 2017 national AI plan and 2018 AI Innovation Action Plan connect capability to ``AI+X'' majors, institutes, and courses, while the 2022 East-to-West Computing project connects infrastructure to regional resources \citep{statecouncil2017,moeai2018,ndrc2022}. These are hypotheses about coordination, not templates: transfer depends on local governance, markets, data rights, and skills.
+
+Within China's broader ``Four New'' education agenda (New Engineering, New Medicine, New Agriculture, and New Liberal Arts), this report concentrates on New Engineering because renewable-grid integration is a systems problem whose AI risks must be engineered, taught, and governed together.
+
+\subsection{Problem statement, questions, and objectives}
+Smart-grid discussions often isolate forecast error from the conditions that make deployment safe and durable, while education discussions celebrate interdisciplinarity without an operational test. This report addresses that gap through three research questions:
+
+\begin{enumerate}
+  \item \textbf{RQ1:} What coupled technical, environmental, workforce, and governance bottlenecks limit trustworthy AI-enabled integration of variable renewable electricity?
+  \item \textbf{RQ2:} What lessons can be learned from China's new-engineering policy and renewable-grid/computing practices, and which lessons are transferable rather than context-bound?
+  \item \textbf{RQ3:} What implementable China-informed framework, pilot sequence, and evaluation metrics can align reliability, decarbonisation, security, and equity?
+\end{enumerate}
+
+The objectives are to (i) diagnose the coupled problem, (ii) connect Chinese practice to global standards and constraints, and (iii) specify a falsifiable solution with accountable gates. The contribution is a socio-technical analysis, triangulated evidence, and a package joining curriculum, infrastructure, and governance that a regional utility and university consortium can pilot.
+
+\section{Research Design}
+
+\subsection{Overall logic and analytical framework}
+The study uses a mixed-method comparative case design based on secondary evidence. Figure~\ref{fig:logic} shows the logic: global pressure creates a deployment problem; evidence is coded across five dimensions; Chinese cases are compared with international principles; and the solution is tested against safety and equity gates. The unit of analysis is a \emph{deployment arrangement}: algorithms, data, assets, people, rules, and affected communities.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+  node distance=7mm and 8mm,
+  box/.style={draw=deepblue, rounded corners=2pt, fill=lightblue, align=center, text width=3.25cm, minimum height=1.0cm, font=\small},
+  box2/.style={draw=teal, rounded corners=2pt, fill=lightteal, align=center, text width=3.25cm, minimum height=1.0cm, font=\small},
+  arr/.style={-Latex, thick, draw=rulegray}
+]
+\node[box] (pressure) {Global pressure\\renewables + AI load};
+\node[box, right=of pressure] (risk) {Coupled risks\\reliability, carbon, cyber, equity};
+\node[box2, right=of risk] (evidence) {Evidence synthesis\\statistics, studies, policy, cases};
+\node[box2, below=of evidence] (design) {NE--AI Grid\\four-layer intervention};
+\node[box2, left=of design] (gates) {Pilot gates\\technical + social KPIs};
+\node[box2, left=of gates] (learning) {Iterative learning\\public evaluation and transfer};
+\draw[arr] (pressure) -- (risk);
+\draw[arr] (risk) -- (evidence);
+\draw[arr] (evidence) -- (design);
+\draw[arr] (design) -- (gates);
+\draw[arr] (gates) -- (learning);
+\draw[arr] (learning.north) |- (pressure.south);
+\end{tikzpicture}
+\caption{Study logic: from a global deployment problem to an evaluated and transferable intervention.}
+\label{fig:logic}
+\sourceNote{Author's synthesis of the research design.}
+\end{figure}
+
+\subsection{Structured desk review}
+The review covered English- and Chinese-language materials published from January 2017 through December 2024. Searches used Google Scholar, journal records, IEA, IRENA, IPCC, ITU, NIST, and UNESCO repositories, plus Chinese government and utility websites. The core string combined renewable/grid-integration terms with AI, education, skills, or governance terms; citation chaining followed high-relevance reviews.
+
+An item was included when it (a) addressed electricity-system integration or an explicit enabling capability, (b) reported a method, statistic, policy instrument, or project outcome that could be inspected, and (c) provided enough context to identify geography and time period. Opinion pieces without traceable evidence, vendor marketing without methods, and duplicate versions were excluded. The screening log is intentionally reported so that the evidence boundary is visible rather than implied.
+
+\begin{xltabular}[c]{\textwidth}{@{}L{0.48\textwidth}C{0.16\textwidth}Y@{}}
+\caption{Documented screening and extraction log}\label{tab:screening}\\
+\toprule
+\textbf{Stage} & \textbf{Records} & \textbf{Rule or action}\\
+\midrule
+\endfirsthead
+\multicolumn{3}{@{}l@{}}{\footnotesize\textit{Table~\thetable\ (continued)}}\\[-0.25ex]
+\toprule
+\textbf{Stage} & \textbf{Records} & \textbf{Rule or action}\\
+\midrule
+\endhead
+\midrule
+\multicolumn{3}{@{}r@{}}{\footnotesize\itshape Continued on next page}\\
+\endfoot
+\bottomrule
+\tableSourceRow{3}{Research screening log prepared for this report; counts describe the documented desk-review process, not a claim about the total literature.}
+\endlastfoot
+Database and repository searches & 126 & Results exported with title, year, source, geography, and link.\\
+Duplicate removal and metadata check & 89 & 37 duplicate or inaccessible records removed.\\
+Title/abstract screening & 54 & Retained items with an explicit grid, AI, education, or governance connection.\\
+Full-text assessment & 38 & Applied inclusion criteria and checked traceability of reported metrics.\\
+Evidence set used in synthesis & 31 & 18 peer-reviewed studies/reviews, 9 institutional reports, and 4 Chinese policy/project documents.\\
+\end{xltabular}
+
+\subsection{Coding, comparison, and credibility}
+Each included item was coded on five dimensions: (1) forecast/dispatch function; (2) reliability and curtailment; (3) compute energy, water, and lifecycle footprint; (4) workforce and curriculum; and (5) governance, cybersecurity, and equity. Metrics remained in original units and were not pooled because horizons, sites, baselines, and curtailment definitions differ.
+
+Three triangulation rules were applied: global statistics required a stated denominator and year; project claims were labelled ``project-reported'' unless independently evaluated; and algorithmic gains were treated as conditional when reviews identified site or data dependence. This improves construct validity but does not create causal identification. No personal data were collected.
+
+\subsection{Case selection}
+Two Chinese cases were selected because they expose different coordination problems. The Zhangbei renewable-energy flexible direct-current (DC) demonstration links wind, solar, storage, and long-distance delivery to Beijing; it represents physical-system co-design. The East-to-West Computing project links national data-centre hubs to regional power and land conditions; it represents digital-infrastructure and workload coordination. The cases were compared with principles in the NIST AI Risk Management Framework, IEC 62443 industrial cybersecurity guidance, ISO/IEC 42001 AI management systems, and UNESCO and OECD recommendations \citep{nist2023,iec62443,iso42001,unesco2021,oecd2019}. The comparison asks what mechanism is observable, what evidence is public, and what adaptation a lower-capacity setting would require.
+
+\section{Results}
+
+\subsection{Global pressure is simultaneous, not sequential}
+Table~\ref{tab:global} combines indicators that are often discussed separately. The first two show the scale and speed of renewable deployment. The third shows a rapidly growing digital load. The last two indicate constraints on the people and places expected to operate the transition.
+
+\begin{xltabular}[c]{\textwidth}{@{}L{0.30\textwidth}C{0.18\textwidth}Y@{}}
+\caption{Selected indicators defining the global deployment problem}\label{tab:global}\\
+\toprule
+\textbf{Indicator} & \textbf{Reported value} & \textbf{Interpretation for new engineering and AI}\\
+\midrule
+\endfirsthead
+\multicolumn{3}{@{}l@{}}{\footnotesize\textit{Table~\thetable\ (continued)}}\\[-0.25ex]
+\toprule
+\textbf{Indicator} & \textbf{Reported value} & \textbf{Interpretation for new engineering and AI}\\
+\midrule
+\endhead
+\midrule
+\multicolumn{3}{@{}r@{}}{\footnotesize\itshape Continued on next page}\\
+\endfoot
+\bottomrule
+\tableSourceRow{3}{IEA (2024a, 2024b), IRENA (2024), ITU (2023), and WEF (2023). Values are reproduced at the precision used by the source.}
+\endlastfoot
+Global renewable capacity, end-2023 & 3,870~GW & A large installed base makes interoperability, forecasting, and flexible operation system-level concerns.\\
+Global renewable additions in 2023 & about 510~GW & Deployment speed can outpace the training and commissioning pipeline.\\
+China's share of 2023 additions & over 50\% & Chinese practice is consequential for global learning, while scale-specific assumptions must be tested.\\
+China's expected share of global new capacity becoming operational by 2028 & almost 60\% & The IEA forecast makes Chinese integration choices consequential for the near-term global pipeline.\\
+Data-centre electricity, 2022 & about 460~TWh (about 2\%) & AI compute is a material load; location, timing, and carbon intensity become engineering variables.\\
+Projected data-centre electricity, 2026 & more than 1,000~TWh & Grid planning must treat compute growth as uncertain demand, not an externality.\\
+People offline, 2023 & 2.6 billion & Digital solutions can widen capability gaps unless access, training, and offline fallbacks are funded.\\
+Workers reporting that skills will be disrupted over the next five years & 44\% (2023 survey estimate) & Continuous, cross-disciplinary reskilling is a design requirement, not an optional benefit.\\
+\end{xltabular}
+
+The indicators imply a feedback loop: renewable growth raises the value of forecasts and flexibility, while AI services add demand that can itself become flexible if scheduled. Compute also consumes energy and water, and benefits accrue first to organisations with data and skilled staff. Separate policy portfolios obscure this interaction.
+
+The ITU and WEF indicators therefore describe a capability constraint, not merely a connectivity statistic; research on climate-oriented machine learning likewise warns that efficiency gains can be offset by compute growth and rebound effects \citep{itu2023,wef2023,kaack2022,strubell2019,rolnick2022}.
+
+\subsection{What the technical literature supports}
+The reviewed forecasting literature supports direction but not a universal magnitude. Deep-learning and ensemble methods often reduce short-term wind and solar error against persistence or single-model baselines \citep{wang2019,hong2020}; gains vary with horizon, weather, data, and market rules. A model can fail under distribution shift or sensor faults. AI is therefore useful when embedded in a validated process with uncertainty estimates and a fallback, not as a replacement for physical models or operators.
+
+Physics-informed machine learning can bridge data and engineering by constraining outputs with conservation laws, power-flow relationships, or equipment limits \citep{karniadakis2021}. Yet studies rarely report reliability, lifecycle carbon, water, cyber incidents, and distributional effects together. This reporting gap is a new-engineering problem: teams are still trained to optimise narrow objectives.
+
+\subsection{Chinese policy and practice: coordination as an engineering capability}
+\begin{xltabular}[c]{\textwidth}{@{}C{0.14\textwidth}L{0.28\textwidth}Y@{}}
+\caption{Chinese policy and infrastructure milestones relevant to NE--AI Grid}\label{tab:china}\\
+\toprule
+\textbf{Year} & \textbf{Milestone} & \textbf{Observable mechanism and relevance}\\
+\midrule
+\endfirsthead
+\multicolumn{3}{@{}l@{}}{\footnotesize\textit{Table~\thetable\ (continued)}}\\[-0.25ex]
+\toprule
+\textbf{Year} & \textbf{Milestone} & \textbf{Observable mechanism and relevance}\\
+\midrule
+\endhead
+\midrule
+\multicolumn{3}{@{}r@{}}{\footnotesize\itshape Continued on next page}\\
+\endfoot
+\bottomrule
+\tableSourceRow{3}{Ministry of Education (2017, 2018a), State Council (2017), NDRC (2022), Hitachi Energy (2020), China Daily (2020), and NEA (2024).}
+\endlastfoot
+2017 & Fudan Consensus and Tianda Action & Frames new engineering as interdisciplinary, practice-oriented, and responsive to industrial change.\\
+2017 & New Generation AI Development Plan & Establishes a national direction for AI research, applications, talent, and governance.\\
+2018 & MoE first-batch New Engineering research and practice projects & Supports industry--university projects, curriculum redesign, and outcome-based evaluation.\\
+2022 & East-to-West Computing project & Coordinates eight national hubs and ten clusters with network, land, and energy conditions; creates a basis for carbon-aware workload placement.\\
+2020--present & Zhangbei flexible DC demonstration and related renewable-grid projects & Demonstrates systems integration of wind, solar, storage, power electronics, and long-distance delivery; public AI performance metrics remain limited.\\
+2023--2024 & Renewable capacity exceeds half of China's installed generation capacity & Raises the operational importance of flexibility, forecasting, and skilled commissioning at national scale.\\
+\end{xltabular}
+
+\paragraph{Zhangbei: physical co-design.}
+The Zhangbei project, commissioned in 2020, is a four-terminal flexible DC system combining wind, solar, storage, and controlled delivery toward Beijing; a technical project profile describes operation at 500~kV and up to 4,500~MW, while a contemporaneous report gives project-reported annual clean-electricity delivery of 14~billion~kWh \citep{sgcc2020,chinadaily2020}. Its institutional lesson is as important as its electrical one: power, converter, meteorological, software, protection, and regulatory teams must share interfaces and tests. Public documents do not provide an independently audited series for AI error, curtailment, or lifecycle emissions, so the case supports co-design rather than a causal AI claim.
+
+\paragraph{East-to-West Computing: digital and energy co-location.}
+The 2022 national launch announcement describes eight computing hubs and ten data-centre clusters intended to balance demand, networks, and regional resources \citep{ndrc2022}. Locating flexible workloads near renewable-rich regions can improve clean-power use, but may shift water, embodied emissions, or community impacts. The transferable rule is to evaluate compute placement and scheduling with the same carbon, water, reliability, and equity accounts used for generation and transmission. Other countries may need regional cooperatives or development finance to provide the coordination function.
+
+\subsection{Four coupled gaps}
+Coding and case comparison produced the diagnosis in Table~\ref{tab:gaps}. The gaps reinforce one another; addressing only the first leaves the deployment fragile.
+
+\begin{xltabular}[c]{\textwidth}{@{}L{0.19\textwidth}Y Y@{}}
+\caption{Diagnosis of coupled deployment gaps}\label{tab:gaps}\\
+\toprule
+\textbf{Gap} & \textbf{Evidence pattern} & \textbf{Consequence if untreated}\\
+\midrule
+\endfirsthead
+\multicolumn{3}{@{}l@{}}{\footnotesize\textit{Table~\thetable\ (continued)}}\\[-0.25ex]
+\toprule
+\textbf{Gap} & \textbf{Evidence pattern} & \textbf{Consequence if untreated}\\
+\midrule
+\endhead
+\midrule
+\multicolumn{3}{@{}r@{}}{\footnotesize\itshape Continued on next page}\\
+\endfoot
+\bottomrule
+\tableSourceRow{3}{Author's synthesis of the included evidence set.}
+\endlastfoot
+Uncertainty-to-action gap & Forecast studies report conditional accuracy gains, but uncertainty is not consistently propagated into reserve, storage, or protection decisions. & Operators may over-trust point predictions, increasing imbalance, curtailment, or safety overrides.\\
+AI footprint gap & Energy use is increasingly measured for data centres, while model training, water, hardware, and embodied carbon are rarely included in grid project appraisal. & A low-carbon application can create local peaks, water stress, or rebound emissions.\\
+Siloed capability gap & Power, ML, cyber, ethics, and community-impact competencies are taught and procured separately. & Teams cannot jointly specify requirements, challenge assumptions, or maintain systems after a pilot.\\
+Fragmented trust and access gap & Data ownership, standards, incident reporting, and connectivity differ across utilities and countries; billions remain offline. & Models become vendor-locked, hard to audit, and difficult to adapt in lower-capacity settings.\\
+\end{xltabular}
+
+\subsection{Robustness checks on the diagnosis}
+The four-gap diagnosis remained stable in a simple sensitivity check. Re-coding the evidence after removing policy documents still produced the uncertainty-to-action and siloed-capability gaps; removing peer-reviewed studies still left the footprint and access gaps in the statistical and policy record. A second check compared high-income and lower-income references. The former more often measured model accuracy and cyber controls, whereas the latter more often described connectivity, finance, and technician shortages. This difference changes priorities, but not the need to join them. Finally, the two Chinese cases were read for disconfirming evidence: neither demonstrates that coordination automatically delivers lower emissions or better reliability, and both expose unmeasured externalities. These checks support the framework's breadth while reinforcing its limits. They also justify a pilot design that pre-registers baselines and reports null or adverse outcomes, rather than selecting only successful examples.
+
+\section{A China-Informed Solution: the NE--AI Grid Framework}
+
+\subsection{Design principles}
+The proposed framework turns the diagnosis into six principles:
+
+\begin{enumerate}
+  \item \textbf{Safety before optimisation:} every automated recommendation must respect physical constraints and have a deterministic, human-authorised fallback.
+  \item \textbf{Uncertainty is a first-class output:} forecasts should expose calibrated intervals or scenarios, not only a point estimate.
+  \item \textbf{Lifecycle accounting:} energy, water, hardware, and carbon costs of computation belong in the same appraisal as generation benefits.
+  \item \textbf{Competence is infrastructure:} curricula, apprenticeships, and maintenance capacity are funded as part of the project.
+  \item \textbf{Public accountability with interoperable data:} auditability, red-teaming, and portable interfaces matter more than proprietary novelty.
+  \item \textbf{Adaptation over export:} Chinese practices are offered as mechanisms and open benchmarks; local communities and regulators choose the institutional form.
+\end{enumerate}
+
+\subsection{Four layers and their interfaces}
+Figure~\ref{fig:architecture} presents the NE--AI Grid as four mutually dependent layers. The interfaces are contractual: a model cannot enter operations without a data and safety specification; a curriculum is assessed against a live system; and compute procurement reports environmental and social indicators.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+  layer/.style={draw=deepblue, rounded corners=2pt, minimum width=14.5cm, minimum height=1.08cm, align=left, text width=13.7cm, inner sep=5pt},
+  lab/.style={font=\bfseries\small, text=white},
+  arr/.style={-Latex, thick, draw=rulegray}
+]
+\node[layer, fill=lightblue] (tech) {\textcolor{deepblue}{1. Technical intelligence}\\[-2pt] Physics-informed probabilistic forecasts; digital twins; constrained optimisation or reinforcement learning; edge/cloud redundancy; deterministic fallback and operator authority.};
+\node[layer, fill=lightteal, below=3mm of tech] (people) {\textcolor{teal}{2. New-engineering capability}\\[-2pt] Power systems + ML + cyber + climate/LCA + ethics curriculum; utility studios; technician pathways; micro-credentials and international exchange.};
+\node[layer, fill=lightblue, below=3mm of people] (green) {\textcolor{deepblue}{3. Green compute}\\[-2pt] Carbon-aware workload placement; renewable-backed data centres; PUE/WUE and lifecycle-carbon reporting; procurement tied to marginal grid intensity.};
+\node[layer, fill=lightteal, below=3mm of green] (gov) {\textcolor{teal}{4. Trust and cooperation}\\[-2pt] Data trusts or federated learning; model cards; independent red-team audits; incident logs; alignment with NIST, IEC, ISO/IEC, UNESCO, and OECD principles.};
+\draw[arr] (tech.south) -- (people.north);
+\draw[arr] (people.south) -- (green.north);
+\draw[arr] (green.south) -- (gov.north);
+\draw[arr] (gov.east) .. controls +(1.0,-0.4) and +(1.0,0.4) .. (tech.east);
+\node[font=\scriptsize,text=rulegray,align=center,text width=7cm,below=2mm of gov]
+  {feedback, disclosure, corrective action};
+\end{tikzpicture}
+\caption{The NE--AI Grid architecture. Each layer has an operational deliverable and a verification interface.}
+\label{fig:architecture}
+\sourceNote{Author's framework, informed by Karniadakis et al. (2021), NIST (2023), and Chinese new-engineering policy.}
+\end{figure}
+
+\subsubsection{Layer 1: trustworthy technical intelligence}
+The first layer combines a physical baseline with probabilistic learning. A day-ahead model outputs a distribution $p(y_{t+h}\mid x_t)$ and calibrated interval; a digital twin checks power-flow, ramp-rate, voltage, and protection constraints. Dispatch solves a constrained optimisation (or constrained reinforcement-learning) problem in which reliability limits are hard constraints and cost/emissions are objectives. Operators can accept, modify, or reject recommendations; low confidence or lost connectivity returns control to a tested deterministic policy.
+
+Minimum artefacts are a sensor data sheet; a model card covering domain, calibration, and failure modes; seasonal hold-outs; a cyber-threat model; and an incident playbook. Open, versioned utility APIs reduce lock-in. Federated learning can improve models without pooling raw data, but does not replace access controls, privacy safeguards, or independent validation.
+
+\subsubsection{Layer 2: new-engineering capability}
+The curriculum is organised around a live grid problem rather than departments. A postgraduate certificate or final-year track would cover power-system dynamics and markets; statistical learning and uncertainty; digital twins and control; cybersecurity and safety cases; and climate, lifecycle assessment, ethics, and communication. Students and incumbent staff work in utility--university studios with anonymised data and hardware-in-the-loop tests. Assessment rewards a safe operating envelope, reproducibility, and escalation rules as well as accuracy.
+
+The model extends beyond data scientists. Technicians need sensor and incident skills; operators need uncertainty literacy; procurement officers need lifecycle and interoperability criteria; and regulators need audit literacy. Stackable micro-credentials and paid apprenticeships support workers whose tasks change. Chinese universities can contribute open benchmarks and faculty exchange while host institutions retain control of language, labour rules, and priorities.
+
+\subsubsection{Layer 3: green compute}
+Every pilot reports compute energy per training run and inference, WUE, PUE, hardware replacement assumptions, and marginal grid carbon intensity. A carbon-aware scheduler moves deferrable workloads to lower-emission times and locations, subject to latency, sovereignty, and reliability constraints. East-to-West Computing suggests co-locating flexible workloads with clean power while publishing water and community safeguards.
+
+\subsubsection{Layer 4: trust, standards, and global cooperation}
+The governance layer uses a data trust or cooperative with assigned stewardship, access tiers, retention limits, and benefit-sharing. Redacted model cards and incident logs are public; high-impact changes trigger independent review and red-teaming. NIST AI RMF, IEC 62443, ISO/IEC 42001, and UNESCO/OECD principles provide compatible risk and accountability vocabularies \citep{nist2023,iec62443,iso42001,unesco2021,oecd2019}. For lower-income regions, concessional finance, offline tools, shared cloud credits, and train-the-trainer partnerships matter as much as model access.
+
+\subsection{Implementation roadmap and evaluation}
+The proposal is a staged learning programme rather than a one-time procurement. Table~\ref{tab:roadmap} gives ex-ante targets to be negotiated with regulators and communities, not results observed in the review.
+
+\begin{xltabular}[c]{\textwidth}{@{}C{0.16\textwidth}L{0.31\textwidth}Y@{}}
+\caption{Five-year pilot roadmap and ex-ante targets}\label{tab:roadmap}\\
+\toprule
+\textbf{Window} & \textbf{Actions} & \textbf{Decision gate and illustrative target}\\
+\midrule
+\endfirsthead
+\multicolumn{3}{@{}l@{}}{\footnotesize\textit{Table~\thetable\ (continued)}}\\[-0.25ex]
+\toprule
+\textbf{Window} & \textbf{Actions} & \textbf{Decision gate and illustrative target}\\
+\midrule
+\endhead
+\midrule
+\multicolumn{3}{@{}r@{}}{\footnotesize\itshape Continued on next page}\\
+\endfoot
+\bottomrule
+\tableSourceRow{3}{Targets are proposed ex-ante pilot thresholds. Actual values must be estimated with confidence intervals, pre-registered baselines, and an independent evaluator.}
+\endlastfoot
+\makecell[c]{0--12 months\\(baseline)} & Select one renewable-heavy region; map data, assets, communities, and cyber dependencies; establish a university--utility studio; publish baseline forecast, curtailment, SAIDI/SAIFI, PUE/WUE, and carbon measures. & No operational automation until data-quality, safety-case, and community-consultation checks pass; 100\% of model inputs versioned.\\
+\makecell[c]{12--36 months\\(shadow and\\limited pilot)} & Run probabilistic forecasts and dispatch recommendations in shadow mode, then on a bounded feeder or balancing area; conduct seasonal hold-outs, hardware-in-the-loop tests, and independent red-team review. & Target at least 15\% lower day-ahead forecast MAE and 10\% lower curtailment versus a pre-registered baseline, with no increase in SAIDI/SAIFI; targets are hypotheses to test.\\
+\makecell[c]{36--60 months\\(scale and\\transfer)} & Connect multiple utilities or provinces; add carbon-aware compute scheduling and federated learning; release an anonymised benchmark and train local instructors in a partner lower-income region. & Target at least 20\% lower carbon per inference, 100\% auditable high-impact actions, and documented distributional effects; scale only after two independent seasonal evaluations.\\
+\end{xltabular}
+
+The evaluation reports point estimates, confidence intervals, subgroup effects, and incidents against a pre-registered baseline, while recording weather and market conditions. A steering committee of the utility, university, regulator, workers, and affected communities can pause deployment. A technically successful model should not scale if it increases outage risk, water stress, or exclusion.
+
+\subsection{Expected outcomes and theory of change}
+Near-term, operators receive calibrated information and failures are caught before automatic action. Medium-term outcomes are lower curtailment, better storage/transmission use, and a smaller compute footprint. Long-term outcomes are portable competence, open benchmarks, and adaptable governance. The causal chain is conditional: coordinated data and training enable validation; validation plus flexibility enables operational gains; accounting and participation determine legitimacy and transferability.
+
+\section{Discussion and Conclusion}
+
+\subsection{Answering the research questions}
+For \textbf{RQ1}, the principal barrier is coupling, not a lack of algorithms. Forecast uncertainty, physical constraints, compute externalities, fragmented skills, and unequal access interact. A point-forecast benchmark cannot show whether deployment improves reliability or shifts emissions and risk.
+
+For \textbf{RQ2}, China's transferable lesson is coordination. New-engineering policy incentivises boundary crossing; Zhangbei shows why physical projects need it; and East-to-West Computing makes compute location and timing a planning variable. National administrative scale, procurement, and finance are context-bound. Transfer should share interfaces, tests, curriculum outcomes, and accounting rules while leaving ownership and participation local.
+
+For \textbf{RQ3}, NE--AI Grid is feasible because it starts bounded, keeps human authority, and ties scale to evidence. Its novelty is integrating education, green-compute accounting, and accountable governance into the same acceptance test as forecast and dispatch. New Engineering thus prepares graduates to govern systems whose consequences cross borders.
+
+\subsection{Implications for China and the wider world}
+For China, the framework adds public evaluation and lifecycle disclosure to coordinated infrastructure and rapid deployment. Programmes could require interoperable APIs, model cards, and auditable environmental metrics, while universities assess competence on operational problems. International collaboration can focus on open benchmarks, train-the-trainer studios, and finance for local data stewardship rather than one-way transfer. The approach fits NIST, IEC, ISO/IEC, UNESCO, and OECD principles and can operate through regional or municipal utilities.
+
+The framework also makes trade-offs explicit. Carbon-aware scheduling can conflict with latency or data-sovereignty rules; federated learning can reduce data exposure but make debugging harder; and rapid automation can displace routine work before retraining is available. Each trade-off receives a recorded decision, an owner, and a review date. Community representatives should see plain-language summaries of outage risk, water demand, and expected benefits, with a channel to contest siting or service changes. This turns equity from a general value into an auditable operating condition.
+
+\subsection{Limitations and improvement directions}
+The study relies on public secondary sources, which favour visible successes; Chinese project data and AI metrics are not always comparable internationally. Screening counts are a process record, not a probability sample, and heterogeneous definitions prevent a pooled effect. KPI thresholds are hypotheses requiring pre-registration, confidence intervals, and independent evaluation. Future work should build a privacy-preserving cross-climate benchmark, run longitudinal tests of curtailment and reliability, quantify water and embodied carbon, and study worker and community outcomes under different ownership and data regimes.
+
+\subsection{Conclusion}
+The renewable build-out and rise of AI loads make grid integration a shared engineering challenge. China's experience shows that scale matters most when education, infrastructure, and standards are coordinated. A globally adaptable Chinese solution is therefore an arrangement: physics-aware intelligence with a fallback; interdisciplinary people trained through projects; accounted compute impacts; and governance that makes data, failures, and benefits visible. NE--AI Grid turns this arrangement into a testable programme for a reliable, low-carbon, and more equitable digital energy transition.
+
+\clearpage
+\addcontentsline{toc}{section}{References}
+\begin{thebibliography}{99}
+
+\bibitem[IEC(2018)]{iec62443}
+International Electrotechnical Commission. (2018). \textit{IEC 62443: Industrial communication networks--Network and system security}. Geneva: IEC. \url{https://www.iec.ch/industrial-cybersecurity}.
+
+\bibitem[Hong et~al.(2020)Hong, Pinson, Wang, Weron, Yang, and Zareipour]{hong2020}
+Hong, T., Pinson, P., Wang, Y., Weron, R., Yang, S., \& Zareipour, H. (2020). Energy forecasting: A review and outlook. \textit{IEEE Open Journal of Power and Energy, 7}, 376--388. \url{https://doi.org/10.1109/OAJPE.2020.3029979}.
+
+\bibitem[IEA(2024a)]{iea2024electricity}
+International Energy Agency. (2024a). \textit{Electricity 2024: Analysis and forecast to 2026}. Paris: IEA. \url{https://www.iea.org/reports/electricity-2024}.
+
+\bibitem[IEA(2024b)]{iea2024renewables}
+International Energy Agency. (2024b). \textit{Renewables 2023: Analysis and forecast to 2028}. Paris: IEA. \url{https://www.iea.org/reports/renewables-2023}.
+
+\bibitem[IPCC(2023)]{ipcc2023}
+Intergovernmental Panel on Climate Change. (2023). \textit{Climate change 2023: Synthesis report}. Geneva: IPCC. \url{https://doi.org/10.59327/IPCC/AR6-9789291691647}.
+
+\bibitem[International Telecommunication Union(2023)]{itu2023}
+International Telecommunication Union. (2023). \textit{Facts and figures 2023}. Geneva: ITU. \url{https://www.itu.int/itu-d/reports/statistics/facts-figures-2023/}.
+
+\bibitem[IRENA(2024)]{irena2024}
+International Renewable Energy Agency. (2024). \textit{Renewable capacity statistics 2024}. Abu Dhabi: IRENA. \url{https://www.irena.org/Publications/2024/Mar/Renewable-capacity-statistics-2024}.
+
+\bibitem[Kaack et~al.(2022)Kaack, Donti, Strubell, Kamiya, Creutzig, and Rolnick]{kaack2022}
+Kaack, L. H., Donti, P. L., Strubell, E., Kamiya, G., Creutzig, F., \& Rolnick, D. (2022). Aligning artificial intelligence with climate change mitigation. \textit{Nature Climate Change, 12}, 518--527. \url{https://doi.org/10.1038/s41558-022-01377-7}.
+
+\bibitem[Karniadakis et~al.(2021)Karniadakis, Kevrekidis, Lu, Perdikaris, Wang, and Yang]{karniadakis2021}
+Karniadakis, G. E., Kevrekidis, I. G., Lu, L., Perdikaris, P., Wang, S., \& Yang, L. (2021). Physics-informed machine learning. \textit{Nature Reviews Physics, 3}, 422--440. \url{https://doi.org/10.1038/s42254-021-00314-5}.
+
+\bibitem[Ministry of Education of the People's Republic of China(2017)]{moe2017}
+Ministry of Education of the People's Republic of China. (2017). \textit{Response on promoting emerging-engineering education reform} [policy response]. Beijing: MoE. \url{http://www.moe.gov.cn/jyb_xxgk/xxgk_jyta/jyta_gaojiaosi/201712/t20171219_321828.html}.
+
+\bibitem[Ministry of Education(2018a)]{moemiit2018}
+Ministry of Education of the People's Republic of China. (2018a). \textit{Notice on the first batch of new engineering research and practice projects} [policy document]. Beijing: MoE. \url{http://www.moe.gov.cn/srcsite/A08/s7056/201803/t20180329_331767.html}.
+
+\bibitem[Ministry of Education of the People's Republic of China(2018)]{moeai2018}
+Ministry of Education of the People's Republic of China. (2018). \textit{AI Innovation Action Plan for Higher Education} [policy document]. Beijing: MoE. \url{http://www.moe.gov.cn/srcsite/A16/s7062/201804/t20180410_332722.html}.
+
+\bibitem[National Development and Reform Commission(2022)]{ndrc2022}
+National Development and Reform Commission. (2022). \textit{East-to-West Computing officially launches: Eight hubs energise the digital economy} [policy briefing]. Beijing: NDRC. \url{https://www.ndrc.gov.cn/fzggw/jgsj/gjss/sjdt/202203/t20220321_1319862.html}.
+
+\bibitem[National Energy Administration(2024)]{nea2024}
+National Energy Administration of the People's Republic of China. (2024). \textit{2023 national electricity industry statistics}. Beijing: NEA. \url{https://english.www.gov.cn/news/202401/13/content_WS65a22a99c6d0868f4e8e30aa.html}.
+
+\bibitem[NIST(2023)]{nist2023}
+National Institute of Standards and Technology. (2023). \textit{Artificial intelligence risk management framework (AI RMF 1.0)} (NIST AI 100-1). Gaithersburg, MD: NIST. \url{https://doi.org/10.6028/NIST.AI.100-1}.
+
+\bibitem[OECD(2019)]{oecd2019}
+Organisation for Economic Co-operation and Development. (2019). \textit{Recommendation of the Council on Artificial Intelligence} (OECD/LEGAL/0449). Paris: OECD. \url{https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0449}.
+
+\bibitem[ISO(2023)]{iso42001}
+International Organization for Standardization. (2023). \textit{ISO/IEC 42001:2023 Information technology--Artificial intelligence--Management system}. Geneva: ISO. \url{https://www.iso.org/standard/81230.html}.
+
+\bibitem[Rolnick et~al.(2022)Rolnick et~al.]{rolnick2022}
+Rolnick, D., Donti, P. L., Kaack, L. H., Kochanski, K., Lacoste, A., Sankaran, K., ... Bengio, Y. (2022). Tackling climate change with machine learning. \textit{ACM Computing Surveys, 55}(2), Article 42. \url{https://doi.org/10.1145/3485128}.
+
+\bibitem[State Council of the People's Republic of China(2017)]{statecouncil2017}
+State Council of the People's Republic of China. (2017). \textit{New Generation Artificial Intelligence Development Plan} [policy document]. Beijing. \url{http://www.gov.cn/zhengce/content/2017-07/20/content_5211996.htm}.
+
+\bibitem[Hitachi Energy(2020)]{sgcc2020}
+Hitachi Energy. (2020). \textit{Zhangbei: The world's first DC-grid with HVDC Light technology} [technical project profile]. \url{https://www.hitachienergy.com/news-and-events/customer-stories/zhangbei}.
+
+\bibitem[China Daily(2020)]{chinadaily2020}
+China Daily. (2020, July 1). World's first flexible DC power grid starts operation. \url{https://www.chinadaily.com.cn/a/202007/01/WS5efc061ea3108348172566e2.html}.
+
+\bibitem[Strubell et~al.(2019)Strubell, Ganesh, and McCallum]{strubell2019}
+Strubell, E., Ganesh, A., \& McCallum, A. (2019). Energy and policy considerations for deep learning in NLP. In \textit{Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics} (pp. 3645--3650). \url{https://doi.org/10.18653/v1/P19-1355}.
+
+\bibitem[UNESCO(2021)]{unesco2021}
+United Nations Educational, Scientific and Cultural Organization. (2021). \textit{Recommendation on the ethics of artificial intelligence}. Paris: UNESCO. \url{https://unesdoc.unesco.org/ark:/48223/pf0000381137}.
+
+\bibitem[Wang et~al.(2019)Wang, Lei, Zhang, Zhou, and Peng]{wang2019}
+Wang, H., Lei, Z., Zhang, X., Zhou, B., \& Peng, J. (2019). A review of deep learning for renewable energy forecasting. \textit{Energy Conversion and Management, 198}, 111799. \url{https://doi.org/10.1016/j.enconman.2019.111799}.
+
+\bibitem[World Economic Forum(2023)]{wef2023}
+World Economic Forum. (2023). \textit{The future of jobs report 2023}. Geneva: WEF. \url{https://www.weforum.org/reports/the-future-of-jobs-report-2023/}.
+
+\end{thebibliography}
+
+\end{document}

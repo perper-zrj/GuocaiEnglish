@@ -1,0 +1,114 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{config}[2026/09/01 Report configuration]
+
+% Engine-aware font setup. XeLaTeX/LuaLaTeX use the requested system font;
+% pdfLaTeX retains a metrically compatible Times fallback.
+\RequirePackage{iftex}
+\ifPDFTeX
+  \RequirePackage[T1]{fontenc}
+  \RequirePackage[utf8]{inputenc}
+  \RequirePackage{newtxtext}
+\else
+  \RequirePackage{fontspec}
+  \defaultfontfeatures{Ligatures=TeX}
+  \setmainfont{Times New Roman}
+  \setsansfont{Times New Roman}
+  \setmonofont{Times New Roman}[Scale=MatchLowercase]
+\fi
+\RequirePackage{newtxmath}
+
+\RequirePackage[a4paper,margin=1in,headheight=15pt,left=2.54cm,right=2.54cm,top=2.54cm,bottom=2.54cm]{geometry}
+\RequirePackage{setspace}
+\onehalfspacing
+\RequirePackage{microtype}
+\RequirePackage{graphicx}
+\RequirePackage{booktabs}
+\RequirePackage{tabularx}
+\RequirePackage{longtable}
+% xltabular combines longtable page breaks with tabularx's flexible columns.
+\RequirePackage{xltabular}
+\RequirePackage{multirow}
+\RequirePackage{array}
+\RequirePackage{makecell}
+\RequirePackage{enumitem}
+\RequirePackage{float}
+\RequirePackage{xcolor}
+\RequirePackage{tikz}
+\usetikzlibrary{positioning,arrows.meta}
+\RequirePackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\RequirePackage{caption}
+\captionsetup{font=small,labelfont=bf,labelsep=period}
+\RequirePackage{threeparttable}
+\RequirePackage{siunitx}
+\sisetup{detect-all,group-separator={,},group-minimum-digits=4}
+\RequirePackage{ragged2e}
+% Use numbered in-text citations with sorting and compression (e.g., [2--4]).
+\RequirePackage[numbers,sort&compress]{natbib}
+% Distinguish literature citations from explanatory footnotes: citations are
+% raised, smaller, and retain square brackets (e.g., ^{[2]}).
+\DeclareRobustCommand{\citep}[1]{\textsuperscript{[\citealp{#1}]}}
+\RequirePackage[hidelinks,breaklinks]{hyperref}
+\urlstyle{same}
+
+\definecolor{deepblue}{RGB}{25,66,102}
+\definecolor{teal}{RGB}{0,105,112}
+\definecolor{lightblue}{RGB}{232,241,248}
+\definecolor{lightteal}{RGB}{231,245,243}
+\definecolor{lightgray}{RGB}{245,246,247}
+\definecolor{rulegray}{RGB}{110,118,126}
+
+\newcolumntype{Y}{>{\RaggedRight\arraybackslash}X}
+\newcolumntype{L}[1]{>{\RaggedRight\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+
+% Keep long tables aligned with the text block and leave compact, predictable
+% whitespace around them.  Individual tables provide their own repeated heads.
+\setlength{\LTleft}{0pt}
+\setlength{\LTright}{0pt}
+\setlength{\LTpre}{0.6em}
+\setlength{\LTpost}{0.6em}
+
+% A source note in a longtable must be a row so that it remains attached to the
+% final page.  The first argument is the number of table columns.
+\newcommand{\tableSourceRow}[2]{%
+  \multicolumn{#1}{@{}p{\dimexpr\textwidth\relax}@{}}{\footnotesize\textit{Source: #2}}\\[-0.25ex]
+}
+
+\setlength{\parindent}{2em}
+\setlength{\parskip}{0.25em}
+\setlength{\emergencystretch}{3em}
+\setlist[itemize]{leftmargin=*,itemsep=0.2em,topsep=0.25em}
+\setlist[enumerate]{leftmargin=*,itemsep=0.2em,topsep=0.25em}
+
+\RequirePackage{titlesec}
+\titleformat{\section}{\normalfont\Large\bfseries\color{deepblue}}{\thesection}{0.7em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries\color{teal}}{\thesubsection}{0.7em}{}
+\titleformat{\subsubsection}{\normalfont\normalsize\bfseries\color{deepblue}}{\thesubsubsection}{0.7em}{}
+\titlespacing*{\section}{0pt}{1.5ex plus .4ex minus .2ex}{0.8ex}
+\titlespacing*{\subsection}{0pt}{1.2ex plus .3ex minus .2ex}{0.5ex}
+\titlespacing*{\subsubsection}{0pt}{1ex plus .2ex minus .1ex}{0.3ex}
+
+\RequirePackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textit{Engineering Trustworthy AI for Renewable-Powered Grids}}
+\fancyhead[R]{\small\thepage}
+\renewcommand{\headrulewidth}{0.35pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\hypersetup{
+  pdftitle={Engineering Trustworthy AI for Renewable-Powered Grids},
+  pdfauthor={Author Name},
+  pdfsubject={New Engineering and Artificial Intelligence},
+  colorlinks=false
+}
+
+\newcommand{\sourceNote}[1]{\par\smallskip\noindent\textit{Source: #1}}
+\newcommand{\target}[1]{\textbf{#1}}
+
+\let\oldcite\cite
+\renewcommand{\cite}[1]{\textsuperscript{\oldcite{#1}}}
+
+\endinput
+
