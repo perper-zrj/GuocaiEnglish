@@ -75,8 +75,8 @@
   \multicolumn{#1}{@{}p{\dimexpr\textwidth\relax}@{}}{\footnotesize\textit{Source: #2}}\\[-0.25ex]
 }
 
-\setlength{\parindent}{2em}
-\setlength{\parskip}{0.25em}
+\setlength{\parindent}{0.0em}
+\setlength{\parskip}{0.5em}
 \setlength{\emergencystretch}{3em}
 \setlist[itemize]{leftmargin=*,itemsep=0.2em,topsep=0.25em}
 \setlist[enumerate]{leftmargin=*,itemsep=0.2em,topsep=0.25em}
@@ -90,16 +90,12 @@
 \titlespacing*{\subsubsection}{0pt}{1ex plus .2ex minus .1ex}{0.3ex}
 
 \RequirePackage{fancyhdr}
-\pagestyle{fancy}
-\fancyhf{}
-\fancyhead[L]{\small\textit{Engineering Trustworthy AI for Renewable-Powered Grids}}
-\fancyhead[R]{\small\thepage}
+\pagestyle{plain}
+
 \renewcommand{\headrulewidth}{0.35pt}
 \renewcommand{\footrulewidth}{0pt}
 
 \hypersetup{
-  pdftitle={Engineering Trustworthy AI for Renewable-Powered Grids},
-  pdfauthor={Author Name},
   pdfsubject={New Engineering and Artificial Intelligence},
   colorlinks=false
 }
@@ -107,8 +103,8 @@
 \newcommand{\sourceNote}[1]{\par\smallskip\noindent\textit{Source: #1}}
 \newcommand{\target}[1]{\textbf{#1}}
 
-\let\oldcite\cite
-\renewcommand{\cite}[1]{\textsuperscript{\oldcite{#1}}}
+\RequirePackage{etoolbox}
+
 
 \endinput
 
