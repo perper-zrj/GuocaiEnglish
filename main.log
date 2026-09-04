@@ -1,7 +1,6 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.1.4)  3 SEP 2026 00:02
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.1.4)  4 SEP 2026 17:43
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
 **./main.tex
 (main.tex
@@ -1190,61 +1189,125 @@ Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 \f@nch@widthR=\skip96
 \@temptokenb=\toks58
 )
-Package hyperref Info: Option `colorlinks' set `false' on input line 101.
+(D:\MiKTeX\tex/latex/lastpage\lastpage.sty
+Package: lastpage 2025/08/14 v2.1h lastpage: 2.09 or 2e? (HMM)
+
+(D:\MiKTeX\tex/latex/lastpage\lastpage2e.sty
+Package: lastpage2e 2025/08/14 v2.1h Decide which 2e lastpage version to use (H
+MM)
+
+(D:\MiKTeX\tex/latex/lastpage\lastpagemodern.sty
+Package: lastpagemodern 2025-08-14 v2.1h Refers to last page's name (HMM; JPG)
+\c@lastpagecount=\count390
+) 
+))
+Package hyperref Info: Option `colorlinks' set `false' on input line 114.
+ (D:\MiKTeX\tex/latex/footmisc\footmisc.sty
+Package: footmisc 2025/05/09 v7.0b a miscellany of footnote facilities
+\FN@temptoken=\toks59
+\footnotemargin=\dimen342
+Package footmisc Info: Declaring symbol style bringhurst on input line 549.
+Package footmisc Info: Declaring symbol style chicago on input line 557.
+Package footmisc Info: Declaring symbol style wiley on input line 566.
+Package footmisc Info: Declaring symbol style lamport-robust on input line 577.
+
+Package footmisc Info: Declaring symbol style lamport* on input line 597.
+Package footmisc Info: Declaring symbol style lamport*-robust on input line 618
+.
 )
+(D:\MiKTeX\tex/latex/background\background.sty
+Package: background 2014/03/04 v2.1 background material
+
+(D:\MiKTeX\tex/latex/everypage\everypage.sty
+Package: everypage 2020/10/17 R2.0b Hooks to run on every page
+
+
+Package everypage Warning: Functionality similar to this package has recently
+(everypage)                been implemented in LaTeX. This package is now in
+(everypage)                legacy status.
+(everypage)                Please, don't use it in new documents and packages.
+
+
+Package everypage Warning: You appear to be running a version of LaTeX
+(everypage)                providing the new functionality.
+(everypage)                Doing the best to deliver the original `everypage`
+(everypage)                interface on top of it. Strict equivalence is
+(everypage)                not possible, breakage may occur.
+(everypage)                If truly needed, Use `everypage-1x` to force the
+(everypage)                loading of an older code base.
+
+) (D:\MiKTeX\tex/latex/tools\afterpage.sty
+Package: afterpage 2023/07/04 v1.08 After-Page Package (DPC)
+\AP@output=\toks60
+\AP@partial=\box89
+\AP@footins=\box90
+)))
+(D:\MiKTeX\tex/latex/contour\contour.sty
+Invalid UTF-8 byte or sequence at line 11 replaced by U+FFFD.
+Package: contour 2004/11/18 v2.14 Print contoured text (HH, MH)
+\con@length=\skip97
+
+Loading configuration file `contour.cfg'.
+(D:\MiKTeX\tex/latex/contour\contour.cfg
+File: contour.cfg 2004/11/18 v2.14 Print contoured text (HH, MH)
+)
+contour: Using driver file `dvips.cnt'.
+(D:\MiKTeX\tex/latex/contour\dvips.cnt
+File: dvips.cnt 2004/11/18 v2.14 Print contoured text (HH, MH)
+))
 Package translations Info: No language package found. I am going to use `englis
-h' as default language. on input line 8.
+h' as default language. on input line 13.
  (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 8.
+LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 13.
 LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line
- 8.
+ 13.
 
 (D:\MiKTeX\tex/latex/newtx\omlntxmi.fd
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 13.
 LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 
-8.
+13.
  (D:\MiKTeX\tex/latex/newtx\untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 13.
 LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line
- 8.
+ 13.
 
 (D:\MiKTeX\tex/latex/newtx\lmsntxsy.fd
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 13.
 LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input lin
-e 8.
+e 13.
  (D:\MiKTeX\tex/latex/newtx\lmxntxexx.fd
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Info: Command `\dddot' is already robust on input line 8.
-LaTeX Info: Command `\ddddot' is already robust on input line 8.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Info: Command `\dddot' is already robust on input line 13.
+LaTeX Info: Command `\ddddot' is already robust on input line 13.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1280,13 +1343,13 @@ LaTeX Info: Command `\ddddot' is already robust on input line 8.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \microtypecontext on input line 8.
-Package microtype Info: Applying patch `item' on input line 8.
-Package microtype Info: Applying patch `toc' on input line 8.
-Package microtype Info: Applying patch `eqnum' on input line 8.
-Package microtype Info: Applying patch `footnote' on input line 8.
-Package microtype Info: Applying patch `verbatim' on input line 8.
-LaTeX Info: Redefining \microtypesetup on input line 8.
+LaTeX Info: Redefining \microtypecontext on input line 13.
+Package microtype Info: Applying patch `item' on input line 13.
+Package microtype Info: Applying patch `toc' on input line 13.
+Package microtype Info: Applying patch `eqnum' on input line 13.
+Package microtype Info: Applying patch `footnote' on input line 13.
+Package microtype Info: Applying patch `verbatim' on input line 13.
+LaTeX Info: Redefining \microtypesetup on input line 13.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: No adjustment of tracking.
@@ -1310,213 +1373,447 @@ File: translations-basic-dictionary-english.trsl (english translation file `tra
 nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `english'. on input line 8.
-Package hyperref Info: Link coloring OFF on input line 8.
+or `english'. on input line 13.
+Package hyperref Info: Link coloring OFF on input line 13.
  (main.out) (main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
+File: logo.png Graphic file (type bmp)
+<logo.png>
 LaTeX Font Info:    Trying to load font information for OT1+TimesNewRoman(0) on
- input line 13.
-LaTeX Font Info:    No file OT1TimesNewRoman(0).fd. on input line 13.
+ input line 25.
+LaTeX Font Info:    No file OT1TimesNewRoman(0).fd. on input line 25.
 
 
 LaTeX Font Warning: Font shape `OT1/TimesNewRoman(0)/m/n' undefined
-(Font)              using `OT1/cmr/m/n' instead on input line 13.
+(Font)              using `OT1/cmr/m/n' instead on input line 25.
 
 (D:\MiKTeX\tex/latex/microtype\mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
 
-LaTeX Font Warning: Font shape `OT1/TimesNewRoman(0)/m/n' in size <10.5> not av
+LaTeX Font Warning: Font shape `OT1/TimesNewRoman(0)/m/n' in size <12.5> not av
 ailable
-(Font)              size <10.95> substituted on input line 13.
+(Font)              size <12> substituted on input line 25.
 
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 14.4pt on input line 13.
+(Font)              scaled to size 17.28pt on input line 25.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 10.5pt on input line 13.
+(Font)              scaled to size 12.5pt on input line 25.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 7.9pt on input line 13.
+(Font)              scaled to size 9.4pt on input line 25.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 14.4pt on input line 13.
+(Font)              scaled to size 17.28pt on input line 25.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 10.5pt on input line 13.
+(Font)              scaled to size 12.5pt on input line 25.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 7.9pt on input line 13.
+(Font)              scaled to size 9.4pt on input line 25.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 14.4pt on input line 13.
+(Font)              scaled to size 17.28pt on input line 25.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 10.5pt on input line 13.
+(Font)              scaled to size 12.5pt on input line 25.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 7.9pt on input line 13.
+(Font)              scaled to size 9.4pt on input line 25.
 LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 
-13.
+25.
 (D:\MiKTeX\tex/latex/newtx\untxmia.fd
 File: untxmia.fd 2024/04/09 Fontinst v1.933 font definitions for U/ntxmia.
 )
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 14.4pt on input line 13.
+(Font)              scaled to size 17.28pt on input line 25.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 10.5pt on input line 13.
+(Font)              scaled to size 12.5pt on input line 25.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 7.9pt on input line 13.
+(Font)              scaled to size 9.4pt on input line 25.
 LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 
-13.
+25.
  (D:\MiKTeX\tex/latex/newtx\untxsym.fd
 File: untxsym.fd 2023/08/16 Fontinst v1.933 font definitions for U/ntxsym.
 )
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 14.4pt on input line 13.
+(Font)              scaled to size 17.28pt on input line 25.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 10.5pt on input line 13.
+(Font)              scaled to size 12.5pt on input line 25.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 7.9pt on input line 13.
+(Font)              scaled to size 9.4pt on input line 25.
 LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 
-13.
+25.
 
 (D:\MiKTeX\tex/latex/newtx\untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 )
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 14.4pt on input line 13.
+(Font)              scaled to size 17.28pt on input line 25.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 10.5pt on input line 13.
+(Font)              scaled to size 12.5pt on input line 25.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 7.9pt on input line 13.
+(Font)              scaled to size 9.4pt on input line 25.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 14.4pt on input line 13.
+(Font)              scaled to size 17.28pt on input line 25.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 10.5pt on input line 13.
+(Font)              scaled to size 12.5pt on input line 25.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 7.9pt on input line 13.
+(Font)              scaled to size 9.4pt on input line 25.
+LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
+(Font)              scaled to size 10.95pt on input line 25.
+LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
+(Font)              scaled to size 8.0pt on input line 25.
+LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
+(Font)              scaled to size 6.1pt on input line 25.
+LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
+(Font)              scaled to size 10.95pt on input line 25.
+LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
+(Font)              scaled to size 8.0pt on input line 25.
+LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
+(Font)              scaled to size 6.1pt on input line 25.
+LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
+(Font)              scaled to size 10.95pt on input line 25.
+LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
+(Font)              scaled to size 8.0pt on input line 25.
+LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
+(Font)              scaled to size 6.1pt on input line 25.
+LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
+(Font)              scaled to size 10.95pt on input line 25.
+LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
+(Font)              scaled to size 8.0pt on input line 25.
+LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
+(Font)              scaled to size 6.1pt on input line 25.
+LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
+(Font)              scaled to size 10.95pt on input line 25.
+LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
+(Font)              scaled to size 8.0pt on input line 25.
+LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
+(Font)              scaled to size 6.1pt on input line 25.
+LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
+(Font)              scaled to size 10.95pt on input line 25.
+LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
+(Font)              scaled to size 8.0pt on input line 25.
+LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
+(Font)              scaled to size 6.1pt on input line 25.
+LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
+(Font)              scaled to size 10.95pt on input line 25.
+LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
+(Font)              scaled to size 8.0pt on input line 25.
+LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
+(Font)              scaled to size 6.1pt on input line 25.
+File: background.png Graphic file (type bmp)
+<background.png>
+ [1
+
+]
+File: logo.png Graphic file (type bmp)
+<logo.png>
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 33.97067pt, for example:
+(fancyhdr)                \setlength{\headheight}{33.97067pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-18.97067pt}.
+
+File: background.png Graphic file (type bmp)
+<background.png>
+[1]
+LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
+(Font)              scaled to size 12.0pt on input line 53.
+LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
+(Font)              scaled to size 8.8pt on input line 53.
+LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
+(Font)              scaled to size 6.6pt on input line 53.
+LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
+(Font)              scaled to size 12.0pt on input line 53.
+LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
+(Font)              scaled to size 8.8pt on input line 53.
+LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
+(Font)              scaled to size 6.6pt on input line 53.
+LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
+(Font)              scaled to size 12.0pt on input line 53.
+LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
+(Font)              scaled to size 8.8pt on input line 53.
+LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
+(Font)              scaled to size 6.6pt on input line 53.
+LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
+(Font)              scaled to size 12.0pt on input line 53.
+LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
+(Font)              scaled to size 8.8pt on input line 53.
+LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
+(Font)              scaled to size 6.6pt on input line 53.
+LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
+(Font)              scaled to size 12.0pt on input line 53.
+LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
+(Font)              scaled to size 8.8pt on input line 53.
+LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
+(Font)              scaled to size 6.6pt on input line 53.
+LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
+(Font)              scaled to size 12.0pt on input line 53.
+LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
+(Font)              scaled to size 8.8pt on input line 53.
+LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
+(Font)              scaled to size 6.6pt on input line 53.
+LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
+(Font)              scaled to size 12.0pt on input line 53.
+LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
+(Font)              scaled to size 8.8pt on input line 53.
+LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
+(Font)              scaled to size 6.6pt on input line 53.
 
 
 LaTeX Font Warning: Font shape `OT1/TimesNewRoman(0)/m/n' in size <5.5> not ava
 ilable
-(Font)              size <5> substituted on input line 13.
+(Font)              size <5> substituted on input line 53.
 
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 10.0pt on input line 13.
+(Font)              scaled to size 10.0pt on input line 53.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 7.3pt on input line 13.
+(Font)              scaled to size 7.3pt on input line 53.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 5.5pt on input line 13.
+(Font)              scaled to size 5.5pt on input line 53.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 10.0pt on input line 13.
+(Font)              scaled to size 10.0pt on input line 53.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 7.3pt on input line 13.
+(Font)              scaled to size 7.3pt on input line 53.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 5.5pt on input line 13.
+(Font)              scaled to size 5.5pt on input line 53.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 10.0pt on input line 13.
+(Font)              scaled to size 10.0pt on input line 53.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 7.3pt on input line 13.
+(Font)              scaled to size 7.3pt on input line 53.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 5.5pt on input line 13.
+(Font)              scaled to size 5.5pt on input line 53.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 10.0pt on input line 13.
+(Font)              scaled to size 10.0pt on input line 53.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 7.3pt on input line 13.
+(Font)              scaled to size 7.3pt on input line 53.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 5.5pt on input line 13.
+(Font)              scaled to size 5.5pt on input line 53.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 10.0pt on input line 13.
+(Font)              scaled to size 10.0pt on input line 53.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 7.3pt on input line 13.
+(Font)              scaled to size 7.3pt on input line 53.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 5.5pt on input line 13.
+(Font)              scaled to size 5.5pt on input line 53.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 10.0pt on input line 13.
+(Font)              scaled to size 10.0pt on input line 53.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 7.3pt on input line 13.
+(Font)              scaled to size 7.3pt on input line 53.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 5.5pt on input line 13.
+(Font)              scaled to size 5.5pt on input line 53.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 10.0pt on input line 13.
+(Font)              scaled to size 10.0pt on input line 53.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 7.3pt on input line 13.
+(Font)              scaled to size 7.3pt on input line 53.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 5.5pt on input line 13.
-[1
+(Font)              scaled to size 5.5pt on input line 53.
+File: logo.png Graphic file (type bmp)
+<logo.png>
 
-]
-LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 12.0pt on input line 33.
-LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 8.8pt on input line 33.
-LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 6.6pt on input line 33.
-LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 12.0pt on input line 33.
-LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 8.8pt on input line 33.
-LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 6.6pt on input line 33.
-LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 12.0pt on input line 33.
-LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 8.8pt on input line 33.
-LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 6.6pt on input line 33.
-LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 12.0pt on input line 33.
-LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 8.8pt on input line 33.
-LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 6.6pt on input line 33.
-LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 12.0pt on input line 33.
-LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 8.8pt on input line 33.
-LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 6.6pt on input line 33.
-LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 12.0pt on input line 33.
-LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 8.8pt on input line 33.
-LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 6.6pt on input line 33.
-LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 12.0pt on input line 33.
-LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 8.8pt on input line 33.
-LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 6.6pt on input line 33.
- [2] [3] [4] [5] [6] [7] [8] [9] [10]
-Underfull \hbox (badness 1661) in paragraph at lines 256--257
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 33.97067pt, for example:
+(fancyhdr)                \setlength{\headheight}{33.97067pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-18.97067pt}.
+
+File: background.png Graphic file (type bmp)
+<background.png>
+[2]
+File: logo.png Graphic file (type bmp)
+<logo.png>
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 33.97067pt, for example:
+(fancyhdr)                \setlength{\headheight}{33.97067pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-18.97067pt}.
+
+File: background.png Graphic file (type bmp)
+<background.png>
+[3]
+File: logo.png Graphic file (type bmp)
+<logo.png>
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 33.97067pt, for example:
+(fancyhdr)                \setlength{\headheight}{33.97067pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-18.97067pt}.
+
+File: background.png Graphic file (type bmp)
+<background.png>
+[4]
+File: logo.png Graphic file (type bmp)
+<logo.png>
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 33.97067pt, for example:
+(fancyhdr)                \setlength{\headheight}{33.97067pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-18.97067pt}.
+
+File: background.png Graphic file (type bmp)
+<background.png>
+[5]
+File: logo.png Graphic file (type bmp)
+<logo.png>
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 33.97067pt, for example:
+(fancyhdr)                \setlength{\headheight}{33.97067pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-18.97067pt}.
+
+File: background.png Graphic file (type bmp)
+<background.png>
+[6]
+File: logo.png Graphic file (type bmp)
+<logo.png>
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 33.97067pt, for example:
+(fancyhdr)                \setlength{\headheight}{33.97067pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-18.97067pt}.
+
+File: background.png Graphic file (type bmp)
+<background.png>
+[7]
+File: logo.png Graphic file (type bmp)
+<logo.png>
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 33.97067pt, for example:
+(fancyhdr)                \setlength{\headheight}{33.97067pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-18.97067pt}.
+
+File: background.png Graphic file (type bmp)
+<background.png>
+[8]
+File: logo.png Graphic file (type bmp)
+<logo.png>
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 33.97067pt, for example:
+(fancyhdr)                \setlength{\headheight}{33.97067pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-18.97067pt}.
+
+File: background.png Graphic file (type bmp)
+<background.png>
+[9]
+File: logo.png Graphic file (type bmp)
+<logo.png>
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 33.97067pt, for example:
+(fancyhdr)                \setlength{\headheight}{33.97067pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-18.97067pt}.
+
+File: background.png Graphic file (type bmp)
+<background.png>
+[10]
+Underfull \hbox (badness 1661) in paragraph at lines 280--281
 \TU/TimesNewRoman(0)/m/n/12 artefacts; procurement reports lifecycle cost; and 
 a utility–university–regulator–worker–
  []
 
-[11] [12] [13]
-Underfull \hbox (badness 1137) in paragraph at lines 304--305
+File: logo.png Graphic file (type bmp)
+<logo.png>
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 33.97067pt, for example:
+(fancyhdr)                \setlength{\headheight}{33.97067pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-18.97067pt}.
+
+File: background.png Graphic file (type bmp)
+<background.png>
+[11]
+Underfull \hbox (badness 1168) in paragraph at lines 297--298
+[]\TU/TimesNewRoman(0)/m/n/12 Trade-offs are explicit: carbon-aware scheduling 
+can conflict with latency or data
+ []
+
+
+Underfull \hbox (badness 1178) in paragraph at lines 297--298
+\TU/TimesNewRoman(0)/m/n/12 sovereignty; federated learning can complicate debu
+gging; and automation can precede
+ []
+
+File: logo.png Graphic file (type bmp)
+<logo.png>
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 33.97067pt, for example:
+(fancyhdr)                \setlength{\headheight}{33.97067pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-18.97067pt}.
+
+File: background.png Graphic file (type bmp)
+<background.png>
+[12]
+File: logo.png Graphic file (type bmp)
+<logo.png>
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 33.97067pt, for example:
+(fancyhdr)                \setlength{\headheight}{33.97067pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-18.97067pt}.
+
+File: background.png Graphic file (type bmp)
+<background.png>
+[13]
+Underfull \hbox (badness 1137) in paragraph at lines 328--329
 \TU/TimesNewRoman(0)/m/it/12 Emerging-Engineering Education Reform\TU/TimesNewR
 oman(0)/m/n/12 . MoE, 2017, []$[][][][][] [] [] [] [][][] [] [][][] [] [][][] [
 ] [][] [] [][][] []
  []
 
 
-Underfull \hbox (badness 1057) in paragraph at lines 307--308
+Underfull \hbox (badness 1057) in paragraph at lines 331--332
 []\TU/TimesNewRoman(0)/m/n/12 National Development and Reform Commission. \TU/T
 imesNewRoman(0)/m/it/12 East-to-West Computing Officially
  []
 
 
-Underfull \hbox (badness 1708) in paragraph at lines 313--314
+Underfull \hbox (badness 1708) in paragraph at lines 337--338
 []\TU/TimesNewRoman(0)/m/n/12 Hitachi Energy. “Zhangbei: The World’s First DC-G
 rid with HVDC Light Tech-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 313--314
+Underfull \hbox (badness 10000) in paragraph at lines 337--338
 \TU/TimesNewRoman(0)/m/n/12 nology.” Hitachi Energy, 2020, []$[][][][][] [] [] 
 [] [][][] [] [][][][][][][][][][][][][] [] [][][] [] [][][][][][][][][][][][][]
 [][][][] []
  []
 
-[14] (main.aux)
+File: logo.png Graphic file (type bmp)
+<logo.png>
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 33.97067pt, for example:
+(fancyhdr)                \setlength{\headheight}{33.97067pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-18.97067pt}.
+
+File: background.png Graphic file (type bmp)
+<background.png>
+[14] 
+enddocument/afterlastpage (AED): lastpage setting LastPage.
+(main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
@@ -1529,16 +1826,22 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D4E7C066AC4CD5917AB2F9F557BBF0E5;6388.
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: D122C0333D51041E160AAB2FB9C6ACAB;6353
+(rerunfilecheck)             After:  44C6002BC1278DC48F470CF746306891;6360.
  ) 
 Here is how much of TeX's memory you used:
- 44529 strings out of 402986
- 1037428 string characters out of 5455749
- 1561910 words of memory out of 5000000
- 72665 multiletter control sequences out of 15000+600000
- 668628 words of font info for 161 fonts, out of 8000000 for 9000
+ 45006 strings out of 402986
+ 1047314 string characters out of 5455749
+ 1572759 words of memory out of 5000000
+ 73107 multiletter control sequences out of 15000+600000
+ 668861 words of font info for 163 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 99i,17n,131p,1844b,1086s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,17n,131p,1478b,1092s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (14 pages).
+Output written on main.pdf (15 pages).

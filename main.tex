@@ -5,19 +5,39 @@
 \author{Ruijie Zhong\footnote{Ruijie Zhong, Class 2502, Computer Science Major, Hebei University of Engineering.}}
 \date{\today}
 
+\usepackage{xcolor}
+\usepackage{contour}
+
+
+
 \begin{document}
-	
 
-	
-\maketitle
+	\begin{titlepage}
+		\centering
+		{\includegraphics[width=0.08\textwidth]{logo.png} }
+		\vspace{1cm}
+		{\bfseries\LARGE Understanding Contemporary China \par}
+		\vspace{1cm}
+		{\bfseries\Huge Trustworthy AI Engineering for Renewable Energy Grids: A Chinese Perspective \par}
+		\vspace{1cm}
+		{\Large Author: \par}
+		{\Large \textbf{\emph{Ruijie Zhong\textsuperscript{1} \\[0.5em]
+				\small \textsuperscript{1}Class 2502, Computer Science Major, Hebei University of Engineering. }} \par}
+		\vfill
+		{\Large \today \par}
+	\end{titlepage}
 
-\vspace{-1cm}	
+
 
 
 \section*{Abstract}
 \fontsize{12pt}{18pt}\selectfont
 
-The rapid build-out of wind and solar power is essential to climate mitigation, yet variable output, congested networks, cyber risk, and unequal technical capacity make integration difficult. At the same time, digital-sector loads (data centres, AI, and cryptocurrency) are becoming material and geographically concentrated. This report asks how a \emph{New Engineering} approach can use AI without trading reliability, environmental integrity, security, or equity for speed. A structured desk review of international statistics, peer-reviewed research, Chinese policy, and two Chinese infrastructure cases was combined with a five-dimension coding framework. Four coupled gaps	emerge: uncertainty is weakly connected to operational decisions;compute energy, water, and embodied carbon are under-counted;engineering, machine-learning, cyber, and public-interest capabilities remain separated; and data and standards are fragmented. China's new-engineering policies, renewable scale, Zhangbei flexible direct-current demonstration, and East-to-West Computing project illustrate coordination across curriculum, infrastructure, and public standards. The report proposes a four-layer \textbf{NE--AI Grid}:physics-informed probabilistic intelligence with deterministic fallbacks; practice-based interdisciplinary capability; carbon- and water-aware compute; and accountable, interoperable governance. A staged 60-month pilot adds independent evaluation, cost disclosure, and equity gates. The framework gives utilities, universities, regulators, and communities shared acceptance tests and leaves institutional ownership local. The contribution is a China-informed but non-exclusive model that treats trustworthy AI as a socio-technical engineering capability rather than a software add-on.
+The rapid build-out of wind and solar power is essential to climate mitigation, yet variable output, congested networks, cyber risk, and unequal technical capacity make integration difficult. At the same time, digital-sector loads—such as data centers, AI, and cryptocurrency—are becoming material and geographically concentrated. This report asks how a New Engineering approach can use AI without trading reliability, environmental integrity, security, or equity for speed.
+
+A structured desk review of international statistics, peer-reviewed research, Chinese policy, and two Chinese infrastructure cases was combined with a five-dimension coding framework. Four coupled gaps emerge: uncertainty is weakly connected to operational decisions; compute energy, water, and embodied carbon are under-counted; engineering, machine-learning, cyber, and public-interest capabilities remain separated; and data and standards are fragmented. China's new-engineering policies, renewable scale, Zhangbei flexible direct-current demonstration, and East-to-West Computing project illustrate coordination across curriculum, infrastructure, and public standards.
+
+The report proposes a four-layer NE–AI Grid: physics-informed probabilistic intelligence with deterministic fallbacks; practice-based interdisciplinary capability; carbon- and water-aware compute; and accountable, interoperable governance. A staged 60-month pilot adds independent evaluation, cost disclosure, and equity gates. The framework gives utilities, universities, regulators, and communities shared acceptance tests while leaving institutional ownership local, ultimately contributing a China-informed but non-exclusive model that treats trustworthy AI as a socio-technical engineering capability rather than a software add-on.
 			
 \noindent\textbf{Keywords:} Trustworthy AI, Renewable Energy Integration, Energy Equity in China
 
@@ -52,34 +72,38 @@ The objectives are to diagnose the coupled problem, connect Chinese practice to 
 
 \section{Research Design}
 
-\subsection{Overall logic and analytical framework}
-The study uses a structured desk review with qualitative comparative case analysis; it contains no primary data or causal estimation. Figure~\ref{fig:logic} traces the chain from global pressure to coded evidence, Chinese cases, and safety and equity gates. The unit of analysis is a \emph{deployment arrangement}: algorithms, data, assets, people, rules, and affected communities.
+\subsection{Overall logic \& analytical framework}
 
 \begin{figure}[H]
-\centering
-\begin{tikzpicture}[
-  node distance=7mm and 8mm,
-  box/.style={draw=deepblue, rounded corners=2pt, fill=lightblue, align=center, text width=3.25cm, minimum height=1.0cm, font=\small},
-  box2/.style={draw=teal, rounded corners=2pt, fill=lightteal, align=center, text width=3.25cm, minimum height=1.0cm, font=\small},
-  arr/.style={-Latex, thick, draw=rulegray}
-]
-\node[box] (pressure) {Global pressure\\renewables + AI load};
-\node[box, right=of pressure] (risk) {Coupled risks\\reliability, carbon, cyber, equity};
-\node[box2, right=of risk] (evidence) {Evidence synthesis\\statistics, studies, policy, cases};
-\node[box2, below=of evidence] (design) {NE--AI Grid\\four-layer intervention};
-\node[box2, left=of design] (gates) {Pilot gates\\technical + social KPIs};
-\node[box2, left=of gates] (learning) {Iterative learning\\public evaluation and transfer};
-\draw[arr] (pressure) -- (risk);
-\draw[arr] (risk) -- (evidence);
-\draw[arr] (evidence) -- (design);
-\draw[arr] (design) -- (gates);
-\draw[arr] (gates) -- (learning);
-\draw[arr] (learning.north) |- (pressure.south);
-\end{tikzpicture}
-\caption{Study logic from problem to evaluated intervention.}
-\label{fig:logic}
-\sourceNote{Author's synthesis.}
+	\centering
+	\begin{tikzpicture}[
+		node distance=7mm and 8mm,
+		box/.style={draw=deepblue, rounded corners=2pt, fill=lightblue, align=center, text width=3.25cm, minimum height=1.0cm, font=\small},
+		box2/.style={draw=teal, rounded corners=2pt, fill=lightteal, align=center, text width=3.25cm, minimum height=1.0cm, font=\small},
+		arr/.style={-Latex, thick, draw=rulegray}
+		]
+		\node[box] (pressure) {Global pressure\\renewables + AI load};
+		\node[box, right=of pressure] (risk) {Coupled risks\\reliability, carbon, cyber, equity};
+		\node[box2, right=of risk] (evidence) {Evidence synthesis\\statistics, studies, policy, cases};
+		\node[box2, below=of evidence] (design) {NE--AI Grid\\four-layer intervention};
+		\node[box2, left=of design] (gates) {Pilot gates\\technical + social KPIs};
+		\node[box2, left=of gates] (learning) {Iterative learning\\public evaluation and transfer};
+		\draw[arr] (pressure) -- (risk);
+		\draw[arr] (risk) -- (evidence);
+		\draw[arr] (evidence) -- (design);
+		\draw[arr] (design) -- (gates);
+		\draw[arr] (gates) -- (learning);
+		\draw[arr] (learning.north) |- (pressure.south);
+	\end{tikzpicture}
+	\caption{Study logic from problem to evaluated intervention.}
+	\label{fig:logic}
+	\sourceNote{Author's synthesis.}
 \end{figure}
+
+
+The study uses a structured desk review with qualitative comparative case analysis; it contains no primary data or causal estimation. Figure~\ref{fig:logic} traces the chain from global pressure to coded evidence, Chinese cases, and safety and equity gates. The unit of analysis is a \emph{deployment arrangement}: algorithms, data, assets, people, rules, and affected communities.
+
+
 
 \subsection{Structured desk review}
 The review covered English- and Chinese-language materials from January 2017 through December 2024. Searches used Google Scholar, journal indexes, IEA, IRENA, IPCC, ITU, NIST, UNESCO, and Chinese government and utility sites. The fixed string was (renewable OR wind OR solar) AND (grid OR dispatch OR curtailment) AND (AI OR machine learning OR forecast) AND (education OR skills OR governance). Searches and exports were run on 15 January 2025; the author-created log records source, year, geography, hit, and disposition.
@@ -198,7 +222,7 @@ The framework turns the diagnosis into four principles:
   \item \textbf{Local adaptation:} share Chinese mechanisms and benchmarks; local actors choose institutions and benefits.
 \end{enumerate}
 
-\subsection{Four layers and their interfaces}
+\subsection{Four layers \& their interfaces}
 Figure~\ref{fig:architecture} presents four mutually dependent layers with acceptance conditions: a model needs a data and safety specification, a curriculum is assessed on a live system, and compute procurement reports environmental and social indicators.
 
 \begin{figure}[H]
@@ -236,7 +260,7 @@ Layer 3 reports energy per training run and defined inference, WUE, PUE, hardwar
 \subsubsection{Layer 4: trust, standards, and global cooperation}
 Layer 4 assigns stewardship, access tiers, retention limits, and benefit-sharing through a data trust\footnote{A data trust is a stewardship arrangement in which an independent trustee or collective manages access, duties, and benefit-sharing for data on behalf of defined beneficiaries.} or cooperative. Redacted model cards and incident logs are public; high-impact changes trigger independent review and red-teaming. NIST risk-management principles supply a compatible vocabulary \cite{nist2023}. Lower-income regions need concessional finance, offline tools, and train-the-trainer partnerships.
 
-\subsection{Roadmap and evaluation}
+\subsection{Roadmap \& evaluation}
 The proposal is a staged learning programme, not a one-time procurement. Table~\ref{tab:roadmap} gives ex-ante targets, not observed results. Mean absolute error (MAE) measures forecast accuracy; SAIDI/SAIFI\footnote{System Average Interruption Duration Index (SAIDI) and System Average Interruption Frequency Index (SAIFI) are standard distribution-reliability measures for average outage duration and frequency, respectively.} measure interruption duration/frequency; PUE, WUE, and lifecycle assessment (LCA)\footnote{Power Usage Effectiveness (PUE) is total facility energy divided by IT energy; Water Usage Effectiveness (WUE) measures site water use per IT energy; lifecycle assessment (LCA) estimates environmental impacts across defined hardware or service life-cycle stages.} capture compute impacts. Each gate requires a costed business case for capital, operations, compute, training, and decommissioning; scale-up cannot exceed a regulator-approved total-cost-of-ownership ceiling.
 
 \begin{table}[H]\small
@@ -255,7 +279,7 @@ The proposal is a staged learning programme, not a one-time procurement. Table~\
 
 The utility owns safety and baseline KPIs; the university owns curriculum and benchmark artefacts; procurement reports lifecycle cost; and a utility--university--regulator--worker--community committee can pause deployment or hear appeals. Evaluation reports point estimates, confidence intervals, prediction-interval coverage, subgroup effects, and incidents against a pre-registered baseline, with weather and market conditions recorded. Scale-up is barred when outage risk, water stress, lifecycle cost, or exclusion exceeds its margin. Paid apprenticeship seats and offline access are equity outputs.
 
-\subsection{Expected outcomes and theory of change}
+\subsection{Expected outcomes \& theory of change}
 Near-term, operators receive calibrated information before action; medium-term outcomes are lower curtailment and compute footprint; long-term outcomes are portable competence and adaptable governance. The causal chain is conditional on validation, flexibility, accounting, and participation.
 
 \section{Discussion \& Conclusion}

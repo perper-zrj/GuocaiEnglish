@@ -75,7 +75,7 @@
   \multicolumn{#1}{@{}p{\dimexpr\textwidth\relax}@{}}{\footnotesize\textit{Source: #2}}\\[-0.25ex]
 }
 
-\setlength{\parindent}{0.0em}
+\setlength{\parindent}{2.0em}
 \setlength{\parskip}{0.5em}
 \setlength{\emergencystretch}{3em}
 \setlist[itemize]{leftmargin=*,itemsep=0.2em,topsep=0.25em}
@@ -90,7 +90,20 @@
 \titlespacing*{\subsubsection}{0pt}{1ex plus .2ex minus .1ex}{0.3ex}
 
 \RequirePackage{fancyhdr}
-\pagestyle{plain}
+
+\usepackage{lastpage}
+
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhf{}
+\fancyhead[L]{\textbf{Understanding Contemporary China}} %Nombre del documento en el encabezado
+\fancyhead[R]{\includegraphics[width=0.04\textwidth]{logo.png}}
+
+\renewcommand{\headrulewidth}{2pt} 
+\renewcommand{\footrulewidth}{1pt}
+\lfoot{\emph{Ruijie Zhong}}
+\cfoot{\today}
+\rfoot{Page \thepage \; of \;\pageref{LastPage}}
 
 \renewcommand{\headrulewidth}{0.35pt}
 \renewcommand{\footrulewidth}{0pt}
@@ -102,8 +115,18 @@
 
 \newcommand{\sourceNote}[1]{\par\smallskip\noindent\textit{Source: #1}}
 \newcommand{\target}[1]{\textbf{#1}}
-
+\usepackage[bottom]{footmisc}
 \RequirePackage{etoolbox}
+\usepackage[pages=all]{background}
+
+\backgroundsetup{
+  scale=1,
+  angle=0,
+  opacity=0.75, % 设置透明度为 30%
+  contents={%
+    \includegraphics[width=\paperwidth, height=\paperheight]{background.png}
+  }
+}
 
 
 \endinput
