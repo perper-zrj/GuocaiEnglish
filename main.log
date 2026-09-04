@@ -1,6 +1,7 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.1.4)  4 SEP 2026 18:03
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.1.4)  4 SEP 2026 18:08
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
 **./main.tex
 (main.tex
@@ -1517,95 +1518,95 @@ File: background.png Graphic file (type bmp)
 <background.png>
 [1]
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 12.0pt on input line 53.
+(Font)              scaled to size 12.0pt on input line 52.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 8.8pt on input line 53.
+(Font)              scaled to size 8.8pt on input line 52.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 6.6pt on input line 53.
+(Font)              scaled to size 6.6pt on input line 52.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 12.0pt on input line 53.
+(Font)              scaled to size 12.0pt on input line 52.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 8.8pt on input line 53.
+(Font)              scaled to size 8.8pt on input line 52.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 6.6pt on input line 53.
+(Font)              scaled to size 6.6pt on input line 52.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 12.0pt on input line 53.
+(Font)              scaled to size 12.0pt on input line 52.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 8.8pt on input line 53.
+(Font)              scaled to size 8.8pt on input line 52.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 6.6pt on input line 53.
+(Font)              scaled to size 6.6pt on input line 52.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 12.0pt on input line 53.
+(Font)              scaled to size 12.0pt on input line 52.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 8.8pt on input line 53.
+(Font)              scaled to size 8.8pt on input line 52.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 6.6pt on input line 53.
+(Font)              scaled to size 6.6pt on input line 52.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 12.0pt on input line 53.
+(Font)              scaled to size 12.0pt on input line 52.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 8.8pt on input line 53.
+(Font)              scaled to size 8.8pt on input line 52.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 6.6pt on input line 53.
+(Font)              scaled to size 6.6pt on input line 52.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 12.0pt on input line 53.
+(Font)              scaled to size 12.0pt on input line 52.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 8.8pt on input line 53.
+(Font)              scaled to size 8.8pt on input line 52.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 6.6pt on input line 53.
+(Font)              scaled to size 6.6pt on input line 52.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 12.0pt on input line 53.
+(Font)              scaled to size 12.0pt on input line 52.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 8.8pt on input line 53.
+(Font)              scaled to size 8.8pt on input line 52.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 6.6pt on input line 53.
+(Font)              scaled to size 6.6pt on input line 52.
 
 
 LaTeX Font Warning: Font shape `OT1/TimesNewRoman(0)/m/n' in size <5.5> not ava
 ilable
-(Font)              size <5> substituted on input line 53.
+(Font)              size <5> substituted on input line 52.
 
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 10.0pt on input line 53.
+(Font)              scaled to size 10.0pt on input line 52.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 7.3pt on input line 53.
+(Font)              scaled to size 7.3pt on input line 52.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 5.5pt on input line 53.
+(Font)              scaled to size 5.5pt on input line 52.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 10.0pt on input line 53.
+(Font)              scaled to size 10.0pt on input line 52.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 7.3pt on input line 53.
+(Font)              scaled to size 7.3pt on input line 52.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 5.5pt on input line 53.
+(Font)              scaled to size 5.5pt on input line 52.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 10.0pt on input line 53.
+(Font)              scaled to size 10.0pt on input line 52.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 7.3pt on input line 53.
+(Font)              scaled to size 7.3pt on input line 52.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 5.5pt on input line 53.
+(Font)              scaled to size 5.5pt on input line 52.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 10.0pt on input line 53.
+(Font)              scaled to size 10.0pt on input line 52.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 7.3pt on input line 53.
+(Font)              scaled to size 7.3pt on input line 52.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 5.5pt on input line 53.
+(Font)              scaled to size 5.5pt on input line 52.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 10.0pt on input line 53.
+(Font)              scaled to size 10.0pt on input line 52.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 7.3pt on input line 53.
+(Font)              scaled to size 7.3pt on input line 52.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 5.5pt on input line 53.
+(Font)              scaled to size 5.5pt on input line 52.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 10.0pt on input line 53.
+(Font)              scaled to size 10.0pt on input line 52.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 7.3pt on input line 53.
+(Font)              scaled to size 7.3pt on input line 52.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 5.5pt on input line 53.
+(Font)              scaled to size 5.5pt on input line 52.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 10.0pt on input line 53.
+(Font)              scaled to size 10.0pt on input line 52.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 7.3pt on input line 53.
+(Font)              scaled to size 7.3pt on input line 52.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 5.5pt on input line 53.
+(Font)              scaled to size 5.5pt on input line 52.
 File: logo.png Graphic file (type bmp)
 <logo.png>
 
@@ -1722,7 +1723,7 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 File: background.png Graphic file (type bmp)
 <background.png>
 [10]
-Underfull \hbox (badness 1661) in paragraph at lines 280--281
+Underfull \hbox (badness 1661) in paragraph at lines 279--280
 \TU/TimesNewRoman(0)/m/n/12 artefacts; procurement reports lifecycle cost; and 
 a utility–university–regulator–worker–
  []
@@ -1739,13 +1740,13 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 File: background.png Graphic file (type bmp)
 <background.png>
 [11]
-Underfull \hbox (badness 1168) in paragraph at lines 297--298
+Underfull \hbox (badness 1168) in paragraph at lines 296--297
 []\TU/TimesNewRoman(0)/m/n/12 Trade-offs are explicit: carbon-aware scheduling 
 can conflict with latency or data
  []
 
 
-Underfull \hbox (badness 1178) in paragraph at lines 297--298
+Underfull \hbox (badness 1178) in paragraph at lines 296--297
 \TU/TimesNewRoman(0)/m/n/12 sovereignty; federated learning can complicate debu
 gging; and automation can precede
  []
@@ -1775,26 +1776,26 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 File: background.png Graphic file (type bmp)
 <background.png>
 [13]
-Underfull \hbox (badness 1137) in paragraph at lines 328--329
+Underfull \hbox (badness 1137) in paragraph at lines 327--328
 \TU/TimesNewRoman(0)/m/it/12 Emerging-Engineering Education Reform\TU/TimesNewR
 oman(0)/m/n/12 . MoE, 2017, []$[][][][][] [] [] [] [][][] [] [][][] [] [][][] [
 ] [][] [] [][][] []
  []
 
 
-Underfull \hbox (badness 1057) in paragraph at lines 331--332
+Underfull \hbox (badness 1057) in paragraph at lines 330--331
 []\TU/TimesNewRoman(0)/m/n/12 National Development and Reform Commission. \TU/T
 imesNewRoman(0)/m/it/12 East-to-West Computing Officially
  []
 
 
-Underfull \hbox (badness 1708) in paragraph at lines 337--338
+Underfull \hbox (badness 1708) in paragraph at lines 336--337
 []\TU/TimesNewRoman(0)/m/n/12 Hitachi Energy. “Zhangbei: The World’s First DC-G
 rid with HVDC Light Tech-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 337--338
+Underfull \hbox (badness 10000) in paragraph at lines 336--337
 \TU/TimesNewRoman(0)/m/n/12 nology.” Hitachi Energy, 2020, []$[][][][][] [] [] 
 [] [][][] [] [][][][][][][][][][][][][] [] [][][] [] [][][][][][][][][][][][][]
 [][][][] []
