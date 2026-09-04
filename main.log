@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.1.4)  4 SEP 2026 17:43
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.1.4)  4 SEP 2026 18:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1826,19 +1826,13 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: D122C0333D51041E160AAB2FB9C6ACAB;6353
-(rerunfilecheck)             After:  44C6002BC1278DC48F470CF746306891;6360.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 44C6002BC1278DC48F470CF746306891;6360.
  ) 
 Here is how much of TeX's memory you used:
  45006 strings out of 402986
  1047314 string characters out of 5455749
- 1572759 words of memory out of 5000000
+ 1572766 words of memory out of 5000000
  73107 multiletter control sequences out of 15000+600000
  668861 words of font info for 163 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
